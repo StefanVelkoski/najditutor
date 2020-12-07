@@ -1,0 +1,49 @@
+<div class="headerce sticky-top">
+  <nav class="navbar  navbar-expand-lg navbar-dark bg-dark container">
+    <a class="navbar-brand" href="#">најдиТутор</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+      </ul>
+      <ul class="navbar-nav mr-4">
+        <li class="nav-item">
+          <a class="nav-link" href="" [routerLink]="['/home']">Почетна <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about-us']">За нас</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="['/categories']">
+            Категории
+          </a>
+          <div class="dropdown-menu clicked-dropdown" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="['/categories/art']">Уметност</a>
+            <a class="dropdown-item" [routerLink]="['/categories/maths']">Математика</a>
+            <a class="dropdown-item" [routerLink]="['/categories/languages']">Јазици</a>
+            <a class="dropdown-item" [routerLink]="['/categories/it']">ИТ</a>
+            <a class="dropdown-item" [routerLink]="['/categories/music']">Музика</a>
+            <a class="dropdown-item" [routerLink]="['/categories/science']">Наука</a>
+
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" [routerLink]="['/about-us']">Контакт</a>
+        </li>
+        <li class="nav-item .register">
+          <a class="nav-link" [routerLink]="['/register']">Регистрирација</a>
+        </li>
+        <li class="nav-item .register">
+          <a class="nav-link" [routerLink]="['/login']">Најава</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+  </div>
+

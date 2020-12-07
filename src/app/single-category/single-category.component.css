@@ -1,0 +1,178 @@
+.single-category-custom{
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+
+.accordion-main {
+  font-size: large;
+}
+
+h3{
+  color:#343a40!important;
+  padding: 2.3rem!important;
+
+}
+
+
+
+.e-toggle-icon {
+  padding: 2rem!important;
+}
+
+.aooo{
+  overflow-y: scroll;
+}
+.accordion-main{
+  overflow-y: scroll;
+}
+
+.e-acrdn-panel {
+  overflow-y: scroll!important;
+  height: 500px;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+.card {
+  background: #fff;
+  border-radius: 4px;
+  max-width: 400px;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 25px;
+  margin: 5%;
+  /* position: relative; */
+}
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+}
+.card .title, .card .title2 {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.card svg {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.img-avatar {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  top: -43px;
+  left: 8px;
+}
+
+.card-text {
+  /* display: grid; */
+  grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+  /* position: relative;
+  top: -30px; */
+}
+.title{
+  position: relative;
+  top: -30px;
+  font-size: 15px!important;
+}
+
+.title2{
+  position: relative;
+  top: -60px;
+  color: black!important;
+}
+path {
+  fill: white;
+}
+
+.img-portada {
+  width: 100%;
+}
+
+/* .portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("https://m.media-amazon.com/images/S/aplus-media/vc/cab6b08a-dd8f-4534-b845-e33489e91240._CR75,0,300,300_PT0_SX300__.jpg");
+  background-position: bottom center;
+  background-size: cover;
+} */
+
+button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  transition:.5s;
+
+}
+button:hover{
+  color: #4CAF50  ;
+    transform: rotate(22deg)
+}
+
+.card:hover{
+  transform: translateY(-1.5rem) scale(1.03);
+  cursor: pointer;
+}
+
+#slika{
+  width: 98px;
+  border-radius: 130px;
+}
+
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.filter{
+  flex-grow: 1;
+  margin-right: 3%;
+}
+
+.sort {
+  flex-grow: 1;
+  margin-right: 3%;
+
+}
+
+.search{
+  flex-grow: 3;
+}

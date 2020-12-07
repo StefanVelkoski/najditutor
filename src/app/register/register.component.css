@@ -1,0 +1,56 @@
+.custom-container{
+    margin-top: 150px;
+    width: 650px;
+}
+.col-md-6{
+    padding: 0px;
+}
+.col-sm-6{
+    padding: 0px;
+}
+.col-lg-6{
+    padding: 0px;
+}
+.register-container-customer{
+    margin-bottom: 200px;
+    width: 650px;
+    border:1px solid #ced4da;
+    padding: 40px;
+  }
+
+  .register-container-tutor{
+    margin-bottom: 200px;
+    width: 650px;
+    border:1px solid #ced4da;
+    padding: 40px;
+  }
+  .custom-class{
+      text-align: center;
+  }
+  .align-center{
+      text-align: center;
+      margin-bottom: 20px;
+      color:#343a40;
+
+  }
+  a{
+      text-decoration : none;
+      color:#343a40;
+  }
+
+    .aktivna {
+    color: #007bff;
+    background-color: rgba(0,0,0,.03);
+
+  }
+
+  .back {
+      background-image: 'https://groupquality.com/2015/wp-content/uploads/2015/10/Background-typing.jpg';
+  }
+  .custom-button{
+    margin-top: 15px;
+  }
+  .form-check-label a{
+          color: #007bff;
+
+  }

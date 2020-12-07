@@ -1,0 +1,57 @@
+.card-block {
+  padding:10%;
+}
+.categories-card{
+  padding: 1%;
+}
+
+
+.card-title {
+  margin-bottom: 1.75rem;
+}
+
+.categories-card:hover{
+  transform: translateY(-1.5rem) scale(1.03);
+  cursor: pointer;
+  webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
+}
+
+.red-card {
+  border-radius: 10%;
+  color: white;
+  background-color: tomato;
+}
+.blue-card {
+  border-radius: 10%;
+  color: white;
+  background-color: rgb(34 70 232 / 95%);
+}
+.yellow-card {
+  border-radius: 10%;
+  color: white;
+  background-color: rgb(255, 212, 71);
+}
+.green-card {
+  border-radius: 10%;
+  color: white;
+  background-color: rgb(52, 146, 64);
+}
+.turqoise-card {
+  border-radius: 10%;
+  color: white;
+  background-color: rgb(55, 145, 136)
+}
+
+.grey-card {
+    border-radius: 10%;
+    color: white;
+    background-color: rgb(56, 52, 52)
+
+}
+
+.categories-custom {
+
+    margin-top: 6% ;
+    margin-bottom: 6%;
+} 

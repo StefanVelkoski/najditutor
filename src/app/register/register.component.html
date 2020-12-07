@@ -1,0 +1,105 @@
+<div class="container custom-container"> 
+  <div class="row custom-class">
+      <div class="col-sm-12 col-md-6 col-lg-6" >
+       <a (click)="onClickCustomer()" [class.aktivna]= "customer">
+        <div class="card customer">
+        <div class="card-body" [ngClass]="{'aktivna' : customer}">
+          <h5 class="card-title">Ученик</h5>
+        </div>
+      </div>
+    </a>
+    </div>
+    
+    <div class="col-sm-6 col-lg-6 col-md-6" >
+      <a (click)="onClickTutor()" >
+        <div class="card tutor">
+         <div class="card-body" [ngClass]="{'aktivna' : tutor}">
+          <h5 class="card-title">Тутор</h5>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+</div> 
+
+<div class="container register-container-customer" *ngIf='customer'>
+  <form [formGroup]="registerCustomer" (ngSubmit)="onSubmitCustomer()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Име</label>
+      <input type="text" class="form-control" formControlName="firstNameCustomer" placeholder="Внесете име...">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Презиме</label>
+      <input type="text" class="form-control" formControlName="lastNameCustomer" placeholder="Внесете презиме...">
+    </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Е-маил</label>
+        <input type="email" class="form-control" formControlName="emailCustomer" a-describedby="emailHelp" placeholder="Внесете емаил...">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Телефонски број</label>
+        <input type="text" class="form-control"  formControlName="phoneCustomer" placeholder="Внесете број...">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Лозинка</label>
+        <input type="password" class="form-control" formControlName="passwordCustomer" placeholder="Внесете лозинка...">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Потврди лозинка</label>
+        <input type="password" class="form-control" formControlName="confirmPasswordCustomer"  placeholder="Потврдете ја лозинката...">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" formControlName="checkboxTermsCustomer" >
+        <label class="form-check-label" for="exampleCheck1">Дали се согласувате со нашите <a href="#">услови и барања</a>?</label>
+      </div>
+      <button type="submit" class="btn btn-primary custom-button">Регистрирај се</button>
+      <small class="form-text text-muted">Веќе имаш регистрирано профил?<a [routerLink]="['/login']">Најави се тука!</a> </small>
+
+    </form>
+</div>
+
+<div class="container register-container-tutor" *ngIf='tutor'>
+  <form  [formGroup]="registerTutor" (ngSubmit)="onSubmitTutor()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Име</label>
+      <input type="text" class="form-control"  formControlName="firstNameTutor" placeholder="Внесете име...">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Презиме</label>
+      <input type="text" class="form-control" formControlName="lastNameTutor" placeholder="Внесете презиме...">
+    </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Е-маил</label>
+        <input type="email" class="form-control" formControlName="emailTutor" aria-describedby="emailHelp" placeholder="Внесете е-маил...">
+        <small id="emailHelp" class="form-text text-muted">Вашиот е-маил нема да биде споделуван.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Телефонски број</label>
+        <input type="text" class="form-control"  formControlName="phoneTutor" placeholder="07*******...">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Професија</label>
+        <input type="text" class="form-control"  formControlName="professionTutor" placeholder="Внесете професија...">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Краток професионален опис</label>
+        <textarea type="text" class="form-control" formControlName="professionTutor" rows="3" placeholder="Внесете опис..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Лозинка</label>
+        <input type="password" class="form-control" formControlName="passwordTutor" placeholder="Лозинка...">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Потврди лозинка</label>
+        <input type="password" class="form-control" formControlName="confirmPasswordTutor" placeholder="Потврдете лозинка...">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" formControlName="checkboxTermsTutor">
+        <label class="form-check-label" for="exampleCheck1" >Дали се согласувате со нашите <a href="#">услови и барања</a>?</label>
+      </div>
+      <button type="submit" class="btn btn-primary custom-button">Регистрирај се</button>
+   
+      <small class="form-text text-muted">Веќе имаш регистрирано профил?<a [routerLink]="['/login']">Најави се тука!</a> </small>
+    </form>
+</div>
+
