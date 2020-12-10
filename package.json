@@ -10,22 +10,19 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "engines": {
-    "node": "14.15.0",
-    "npm": "6.14.9"
-  },
+
   "private": true,
   "dependencies": {
-    "@angular/animations": "~11.0.4",
-    "@angular/cli": "^11.0.4",
-    "@angular/common": "~11.0.4",
-    "@angular/compiler": "^11.0.4",
-    "@angular/compiler-cli": "^11.0.4",
-    "@angular/core": "~11.0.4",
-    "@angular/forms": "~11.0.4",
-    "@angular/platform-browser": "~11.0.4",
-    "@angular/platform-browser-dynamic": "~11.0.4",
-    "@angular/router": "~11.0.4",
+    "@angular/animations": "~10.2.0",
+    "@angular/cli": "^10.2.0",
+    "@angular/common": "~10.2.0",
+    "@angular/compiler": "~10.2.0",
+    "@angular/compiler-cli": "~10.2.0",
+    "@angular/core": "~10.2.0",
+    "@angular/forms": "~10.2.0",
+    "@angular/platform-browser": "~10.2.0",
+    "@angular/platform-browser-dynamic": "~10.2.0",
+    "@angular/router": "~10.2.0",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@syncfusion/ej2-angular-navigations": "^18.3.53",
     "angular2-counto": "^1.2.5",
@@ -43,15 +40,15 @@
     "owl.carousel": "^2.3.4",
     "path": "^0.12.7",
     "popper.js": "^1.16.1",
-    "rxjs": "~6.5.5",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "typescript": "~3.9.5",
-    "zone.js": "~0.10.3"
+    "typescript": "~.4.0.2",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1000.6",
-    "@angular/cli": "^11.0.4",
-    "@angular/compiler-cli": "^11.0.4",
+    "@angular-devkit/build-angular": "^0.1002.0",
+    "@angular/cli": "^10.0.2",
+    "@angular/compiler-cli": "^10.0.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -65,7 +62,10 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "tslint": "^6.1.3",
-    "typescript": "~3.9.5"
+    "tslint": "^6.1.0"
+  },
+  "engines": {
+    "node": "14.15.0",
+    "npm": "6.14.8"
   }
 }
