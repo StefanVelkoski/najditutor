@@ -7,12 +7,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
 import { routes } from './routes';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CountoModule } from 'angular2-counto';
+// import { CountoModule } from 'angular2-counto';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AnnouncementThumbnailComponent } from './announcement-thumbnail/announcement-thumbnail.component';
-import { SingleCategoryComponent} from './single-category/single-category.component';
 import { CategoriesMainComponent } from './categories-main/categories-main.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterTutorComponent } from './register-tutor/register-tutor.component';
@@ -34,7 +33,6 @@ import { DataService } from './shared/dataservice.service'
     HomeComponent,
     CategoriesMainComponent,
     AnnouncementThumbnailComponent,
-    SingleCategoryComponent,
     LoginComponent,
     RegisterComponent,
     RegisterTutorComponent,
@@ -48,7 +46,6 @@ import { DataService } from './shared/dataservice.service'
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    CountoModule,
     FormsModule,
     ReactiveFormsModule,
     AccordionAllModule
